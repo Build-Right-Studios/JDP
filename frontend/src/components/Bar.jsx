@@ -79,19 +79,8 @@ const Bar = () => {
   ];
 
   return (
-    // Main container with the background color from the image.
-    // The overflow-hidden class is crucial to hide the content outside the marquee view.
     <div className="bg-[#59663f] w-full py-8 text-white flex justify-center items-center">
-      {/* This is the inner container that holds the content.
-        The animation is applied here to make the content scroll.
-        The 'animate-marquee' class is a custom Tailwind animation defined below.
-        We duplicate the content to create a seamless looping effect.
-      */}
       <div className="flex flex-row space-x-12 animate-marquee">
-        {/*
-          Map through the items array to render each item.
-          We repeat this twice to ensure a continuous loop without any gap.
-        */}
         {[...items, ...items].map((item, index) => (
           // Each individual marquee item
           <div
