@@ -7,11 +7,15 @@ import Spices from './Pages/Spices.jsx'
 import Ghee from './Pages/Ghee.jsx'
 import Flour from './Pages/Flour.jsx'
 import HumareKhass from './components/HumareKhass.jsx';
+import WelcomeSection from './components/welcome.jsx';
+import Bar from './components/Bar.jsx';
 
 function App() {
 
   return (
     <>
+      <WelcomeSection />
+      <Bar />
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/shop/oil" element={<OilPage />}></Route>
