@@ -16,13 +16,13 @@ function App() {
     <>
       <WelcomeSection />
       <Bar />
-    <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/shop/oil" element={<OilPage />}></Route>
-      <Route path="/shop/spices" element={<Spices />}></Route>
-      <Route path="/shop/ghee" element={<Ghee />}></Route>
-      <Route path="/shop/flour" element={<Flour />}></Route>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/shop/oil" element={<OilPage />}></Route>
+        <Route path="/shop/spices" element={<Spices />}></Route>
+        <Route path="/shop/ghee" element={<Ghee />}></Route>
+        <Route path="/shop/flour" element={<Flour />}></Route>
+      </Routes>
     </>
   )
 }
