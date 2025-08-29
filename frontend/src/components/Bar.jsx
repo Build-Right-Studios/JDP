@@ -87,14 +87,11 @@ const Bar = () => {
             key={index}
             className="flex flex-row items-center space-x-4 min-w-[250px]"
           >
-            {/* The icon container with a gray, rounded background.
-              This mimics the shape and style from the reference image.
-              We use a subtle shadow for a modern look.
-            */}
+            
             <div className="flex-shrink-0 bg-gray-300 rounded-full w-20 h-20 flex items-center justify-center p-2 shadow-lg">
               {item.icon}
             </div>
-            {/* Text container for title and description */}
+    
             <div className="flex-grow">
               <h3 className="text-xl font-bold text-gray-100">{item.title}</h3>
               <p className="text-sm text-gray-200">{item.description}</p>
