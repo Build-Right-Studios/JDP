@@ -34,13 +34,13 @@ const Footer = () => {
             <div className="mb-8 md:mb-0 w-1/2 sm:w-1/3 lg:w-1/4">
               <h4 className="text-lg font-bold mb-4 font-['Poppins']">BROWSE BY CATEGORY</h4>
               <ul className="space-y-2 text-sm text-gray-600 font-['sans-serif']">
-                <li><a href="#" className="hover:text-gray-900">Beverages</a></li>
-                <li><a href="#" className="hover:text-gray-900">Grocery</a></li>
-                <li><a href="#" className="hover:text-gray-900">Instant Meals & Noodles</a></li>
-                <li><a href="#" className="hover:text-gray-900">Snacks & Desserts</a></li>
+                <li><a href="#" className="hover:text-gray-900">OIL</a></li>
+                <li><a href="#" className="hover:text-gray-900">GHEE</a></li>
+                <li><a href="#" className="hover:text-gray-900">SPICES</a></li>
+                <li><a href="#" className="hover:text-gray-900">FLOUR</a></li>
               </ul>
             </div>
-            <div className="mb-8 md:mb-0 w-1/2 sm:w-1/3 lg:w-1/4">
+            <div className="mb-8 md:mb-0 w-1/2 sm:w-1/3 lg:w-1/4">  
               <h4 className="text-lg font-bold mb-4 font-['Poppins']">BROWSE BY OUTLET</h4>
               <ul className="space-y-2 text-sm text-gray-600 font-['sans-serif']">
                 <li><a href="#" className="hover:text-gray-900">Sec - 128</a></li>
