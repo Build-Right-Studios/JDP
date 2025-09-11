@@ -13,6 +13,7 @@ import GreenBar from './components/AboutUs/GreenBar.jsx'
 import OurMission from './components/AboutUs/OurMission.jsx'
 import Gallery from './components/AboutUs/Gallery.jsx'
 import Faq from './components/AboutUs/Faq.jsx'
+import Contact from './pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
 
 
@@ -35,6 +36,7 @@ function App() {
       <Route path="/shop/spices" element={<Spices />}></Route>
       <Route path="/shop/ghee" element={<Ghee />}></Route>
       <Route path="/shop/flour" element={<Flour />}></Route>
+      <Route path="/contact" element={<Contact />} />
 
     </Routes>
    
