@@ -8,13 +8,14 @@ import Ghee from './Pages/Ghee.jsx'
 import Flour from './Pages/Flour.jsx'
 import Navbar from './components/navbar.jsx'
 import WelcomeSection from './components/Welcome.jsx'
- 
+import Hero from './components/AboutUs/hero.jsx'
 
 
 function App() {
 
   return (
     <>
+   <Hero></Hero>
      <Navbar></Navbar>
     <Routes>
       <Route path="/" element={<Home />}></Route>
