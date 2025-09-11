@@ -7,6 +7,7 @@ import Spices from './Pages/Spices.jsx'
 import Ghee from './Pages/Ghee.jsx'
 import Flour from './Pages/Flour.jsx'
 import Navbar from './components/navbar.jsx'
+import Contact from './Pages/Contact.jsx'
  
 
 
@@ -21,6 +22,7 @@ function App() {
       <Route path="/shop/spices" element={<Spices />}></Route>
       <Route path="/shop/ghee" element={<Ghee />}></Route>
       <Route path="/shop/flour" element={<Flour />}></Route>
+      <Route path="/contact" element={<Contact />} />
 
     </Routes>
    
