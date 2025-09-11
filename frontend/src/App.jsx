@@ -14,6 +14,7 @@ import OurMission from './components/AboutUs/OurMission.jsx'
 import Gallery from './components/AboutUs/Gallery.jsx'
 import Faq from './components/AboutUs/Faq.jsx'
 import Contact from './pages/Contact.jsx'
+import Footer from './components/Footer.jsx'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
    <OurMission  ></OurMission>
    <Gallery></Gallery>
    <Faq></Faq>
+    <Footer></Footer>
      <Navbar></Navbar>
      
 
