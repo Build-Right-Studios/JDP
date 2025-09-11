@@ -111,7 +111,7 @@ const Contact = () => {
           <div>
             <label className="block text-gray-700 mb-2">Message</label>
             <textarea
-              placeholder="Let tell us know your project about"
+              placeholder="Let tell us know your interest"
               rows="5"
               className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-black"
             ></textarea>
