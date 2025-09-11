@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           {/* Logo and Socials */}
           <div className="flex flex-col items-center md:items-start mb-8 md:mb-0 w-full md:w-1/4">
-            <img src="https://placehold.co/150x150/ffffff/000000?text=JAIN+DESI" alt="Jain Desi & Pure Logo" className="mb-4" />
+            <img src="https://placehold.co/150x150/50C878/FFFFFF?text=Logo" alt="Company Logo" className="mb-4 rounded-full" />
             <div className="flex space-x-4 text-gray-500">
               <a href="#" className="hover:text-gray-900">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
