@@ -21,8 +21,10 @@ function App() {
    <Hero></Hero>
    <GreenBar></GreenBar>
    <OurMission  ></OurMission>
+   <Gallery></Gallery>
+   
      <Navbar></Navbar>
-     <Gallery></Gallery>
+     
 
     <Routes>
       <Route path="/" element={<Home />}></Route>
