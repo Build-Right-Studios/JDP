@@ -16,16 +16,15 @@ const Contact = () => {
 
   return (
     <div>
-      {/* CONTACT US Section */}
+     
       <div className="bg-black flex items-center justify-center min-h-screen">
-        <div className="p-20 rounded-lg shadow-lg">
+        <div className="border-x-8 rounded-lg shadow-lg">
           <h1 className="text-6xl font-extrabold tracking-wide text-white">
             CONTACT US
           </h1>
         </div>
       </div>
 
-      {/* OUR STORES Section */}
       <div className="bg-white min-h-screen flex flex-col items-center">
         <h3 className="text-5xl text-black font-bold text-center py-10">
           OUR STORES
@@ -35,14 +34,14 @@ const Contact = () => {
           {stores.map((store, index) => (
             <div
               key={index}
-              className="flex items-center bg-gray-200 rounded-lg overflow-hidden mb-6 h-40"
+              className="flex items-center bg-gray-200 rounded-lg overflow-hidden mb-8 h-45"
             >
-              {/* Image Placeholder */}
-              <div className="bg-gray-500 text-white flex justify-center items-center w-40 h-full font-bold text-lg">
+              
+              <div className="bg-gray-500 text-white flex justify-center items-center w-45 h-full font-bold text-lg">
                 img
               </div>
 
-              {/* Store Info */}
+              
               <div className="text-left p-6 flex-1">
                 <h3 className="font-bold text-2xl">{store.name}</h3>
                 <p className="text-lg">{store.address}</p>
@@ -54,8 +53,8 @@ const Contact = () => {
       </div>
 
       
-      <div className="bg-white min-h-screen flex flex-col items-center px-6 py-16">
-        <h2 className="text-3xl font-bold uppercase tracking-wide text-center mb-6">
+      <div className="bg-white min-h-screen flex flex-col items-center px-6 py-2">
+        <h2 className="text-3xl font-bold uppercase tracking-wide text-center mb-2">
           GET IN TOUCH
         </h2>
         <p className="text-4xl font-extrabold text-center mb-12">
