@@ -10,25 +10,25 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#deccb6] text-[#6d3c1f] p-4 shadow-md sticky top-0 z-50">
+    <nav className="bg-[#deccb6] text-[#6d3c1f] h-25 py-6 px-4 shadow-lg sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lg font-bold">Jain Desi & Pure</div>
+        <div className="text-3xl font-bold">Jain Desi & Pure</div>
 
         
         <div className="hidden md:flex space-x-8 items-center font-semibold">
-          <a href="#" className="hover:text-black">
+          <a href="#" className="hover:text-black text-lg">
             HOME
           </a>
-          <a href="#" className="hover:text-black">
+          <a href="#" className="hover:text-black text-lg">
             PRODUCTS
           </a>
-          <a href="#" className="hover:text-black">
+          <a href="#" className="hover:text-black text-lg">
             ABOUT US
           </a>
-          <a href="#" className="hover:text-black">
+          <a href="#" className="hover:text-black text-lg">
             CONTACT US
           </a>
-          <FaSearch className="cursor-pointer hover:text-black" />
+          <FaSearch className="cursor-pointer hover:text-black " />
         </div>
 
         
