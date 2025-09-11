@@ -32,7 +32,7 @@ const Faq = () => {
 
   return (
     <div className="flex flex-col items-center p-8 bg-gray-100 min-h-screen font-sans">
-      <div className="w-full max-w-2xl mx-auto">
+      <div className="w-full max-w-7xl mx-auto">
         <h2 className="text-5xl font-extrabold text-center mb-8 font-['Poppins']">FAQ</h2>
         <div className="bg-white p-6 rounded-xl shadow-lg">
           {faqs.map((faq, index) => (
