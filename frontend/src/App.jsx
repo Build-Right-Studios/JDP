@@ -7,15 +7,23 @@ import Spices from './Pages/Spices.jsx'
 import Ghee from './Pages/Ghee.jsx'
 import Flour from './Pages/Flour.jsx'
 import Navbar from './components/navbar.jsx'
-import Contact from './Pages/Contact.jsx'
- 
+import WelcomeSection from './components/Welcome.jsx'
+import Hero from './components/AboutUs/hero.jsx'
+import GreenBar from './components/AboutUs/GreenBar.jsx'
+import OurMission from './components/AboutUs/OurMission.jsx'
+import Gallery from './components/AboutUs/Gallery.jsx'
 
 
 function App() {
 
   return (
     <>
+   <Hero></Hero>
+   <GreenBar></GreenBar>
+   <OurMission  ></OurMission>
      <Navbar></Navbar>
+     <Gallery></Gallery>
+
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/shop/oil" element={<OilPage />}></Route>
