@@ -9,6 +9,7 @@ import Flour from './Pages/Flour.jsx'
 import Navbar from './components/navbar.jsx'
 import WelcomeSection from './components/Welcome.jsx'
 import Hero from './components/AboutUs/hero.jsx'
+import GreenBar from './components/AboutUs/GreenBar.jsx'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
    <Hero></Hero>
+   <GreenBar></GreenBar>
      <Navbar></Navbar>
     <Routes>
       <Route path="/" element={<Home />}></Route>
