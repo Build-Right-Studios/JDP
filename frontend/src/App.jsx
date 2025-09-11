@@ -10,6 +10,7 @@ import Navbar from './components/navbar.jsx'
 import WelcomeSection from './components/Welcome.jsx'
 import Hero from './components/AboutUs/hero.jsx'
 import GreenBar from './components/AboutUs/GreenBar.jsx'
+import OurMission from './components/AboutUs/OurMission.jsx'
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
     <>
    <Hero></Hero>
    <GreenBar></GreenBar>
+   <OurMission  ></OurMission>
      <Navbar></Navbar>
+
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/shop/oil" element={<OilPage />}></Route>
