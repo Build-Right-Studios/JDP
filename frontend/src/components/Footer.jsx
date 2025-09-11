@@ -41,12 +41,11 @@ const Footer = () => {
               </ul>
             </div>
             <div className="mb-8 md:mb-0 w-1/2 sm:w-1/3 lg:w-1/4">
-              <h4 className="text-lg font-bold mb-4 font-['Poppins']">BROWSE BY COUNTRY</h4>
+              <h4 className="text-lg font-bold mb-4 font-['Poppins']">BROWSE BY OUTLET</h4>
               <ul className="space-y-2 text-sm text-gray-600 font-['sans-serif']">
-                <li><a href="#" className="hover:text-gray-900">Vietnam</a></li>
-                <li><a href="#" className="hover:text-gray-900">Korea</a></li>
-                <li><a href="#" className="hover:text-gray-900">Thailand</a></li>
-                <li><a href="#" className="hover:text-gray-900">Vietnam</a></li>
+                <li><a href="#" className="hover:text-gray-900">Sec - 128</a></li>
+                <li><a href="#" className="hover:text-gray-900">Sec - 62</a></li>
+                <li><a href="#" className="hover:text-gray-900">Sec - 226</a></li>
               </ul>
             </div>
             <div className="w-1/2 sm:w-1/3 lg:w-1/4">
@@ -55,8 +54,6 @@ const Footer = () => {
                 <li><a href="#" className="hover:text-gray-900">About Us</a></li>
                 <li><a href="#" className="hover:text-gray-900">Contact Us</a></li>
                 <li><a href="#" className="hover:text-gray-900">FAQ</a></li>
-                <li><a href="#" className="hover:text-gray-900">Privacy policy</a></li>
-                <li><a href="#" className="hover:text-gray-900">Terms & Conditions</a></li>
               </ul>
             </div>
           </div>
@@ -71,7 +68,7 @@ const Footer = () => {
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M2.02 5.02L12 12.7L21.98 5.02c-.1-.08-.2-.16-.3-.24C20.5 4.14 16.7 3 12 3S3.5 4.14 2.32 4.78C2.22 4.86 2.12 4.94 2.02 5.02zM2 6.55V18h20V6.55L12 14.24 2 6.55z" />
               </svg>
-              <span>support@malzo.com.au</span>
+              <span>support@jaindesiandpure.com</span>
             </div>
             <div className="flex items-center space-x-2">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
