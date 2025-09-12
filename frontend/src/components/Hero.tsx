@@ -7,11 +7,11 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
-            <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl font-bold text-amber-900 leading-tight">
+            <div className="space-y-4">
+              <h1 className="text-4xl lg:text-6xl font-bold text-amber-900 leading-tight">
                 Essential Oil Bottles
               </h1>
-              <h2 className="text-3xl lg:text-4xl font-semibold text-amber-800">
+              <h2 className="text-2xl lg:text-3xl font-medium text-amber-800">
                 Whole Sale in Custom Packaging
               </h2>
             </div>
@@ -21,54 +21,45 @@ const HeroSection = () => {
             </button>
             
             {/* Stats */}
-            <div className="space-y-4 pt-8">
+            <div className="grid grid-cols-2 gap-6 pt-8">
               <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 rounded-full bg-amber-700"></div>
-                <span className="text-xl text-amber-800 font-medium">1500+ Products Sold</span>
+                <div className="w-2 h-2 rounded-full bg-amber-700"></div>
+                <span className="text-base lg:text-lg text-amber-800 font-medium">1500+ Products Sold</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 rounded-full bg-amber-700"></div>
-                <span className="text-xl text-amber-800 font-medium">1500+ Products Sold</span>
+                <div className="w-2 h-2 rounded-full bg-amber-700"></div>
+                <span className="text-base lg:text-lg text-amber-800 font-medium">1500+ Products Sold</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 rounded-full bg-amber-700"></div>
+                <span className="text-base lg:text-lg text-amber-800 font-medium">1500 + Products Sold</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-2 h-2 rounded-full bg-amber-700"></div>
+                <span className="text-base lg:text-lg text-amber-800 font-medium">1500 + Products Sold</span>
               </div>
             </div>
           </div>
           
           {/* Right Content - Image */}
-          <div className="relative">
-            <div className="relative z-10">
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative z-10 max-w-md lg:max-w-lg">
               <img 
                 src="oil.png" 
                 alt="Essential oil bottles with natural herbs and flowers"
-                className="w-full h-auto object-cover rounded-2xl shadow-2xl"
+                className="w-full h-auto object-contain drop-shadow-2xl"
               />
             </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-amber-300 to-orange-400 rounded-full opacity-20 blur-xl"></div>
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-orange-300 to-amber-400 rounded-full opacity-15 blur-2xl"></div>
-            
-            {/* Additional stats positioned on the right */}
-            <div className="absolute -bottom-12 -right-4 bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-amber-200">
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 rounded-full bg-amber-700"></div>
-                  <span className="text-amber-800 font-medium">1500+ Products Sold</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 rounded-full bg-amber-700"></div>
-                  <span className="text-amber-800 font-medium">1500+ Products Sold</span>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
       
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-10 w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
-        <div className="absolute top-1/3 right-20 w-1 h-1 bg-orange-400 rounded-full animate-ping"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-3 h-3 bg-amber-300 rounded-full opacity-60 animate-pulse"></div>
+      {/* Subtle background decoration */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div className="absolute top-1/4 left-10 w-1 h-1 bg-amber-400 rounded-full"></div>
+        <div className="absolute top-1/3 right-20 w-1 h-1 bg-orange-400 rounded-full"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-1 h-1 bg-amber-300 rounded-full"></div>
       </div>
     </section>
   );
