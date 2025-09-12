@@ -23,11 +23,11 @@ function Navbar() {
                                 <span className="relative z-10 group-hover:text-[#d2a01d] transition">HOME</span>
                                 <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#d2a01d] transition-all duration-300 group-hover:w-full rounded"></span>
                             </NavLink>
-                            <NavLink to="/about-us" className="relative inline-block py-1 px-1 text-gray-800 font-semibold group">
+                            <NavLink to="/about" className="relative inline-block py-1 px-1 text-gray-800 font-semibold group">
                                 <span className="relative z-10 group-hover:text-[#d2a01d] transition">ABOUT US</span>
                                 <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#d2a01d] transition-all duration-300 group-hover:w-full rounded"></span>
                             </NavLink>
-                            <NavLink to="/contact-us" className="relative inline-block py-1 px-1 text-gray-800 font-semibold group">
+                            <NavLink to="/contact" className="relative inline-block py-1 px-1 text-gray-800 font-semibold group">
                                 <span className="relative z-10 group-hover:text-[#d2a01d] transition">CONTACT US</span>
                                 <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#d2a01d] transition-all duration-300 group-hover:w-full rounded"></span>
                             </NavLink>

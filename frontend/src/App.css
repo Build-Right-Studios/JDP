@@ -1,0 +1,6 @@
+.stroke-white {
+  -webkit-text-stroke: 2px white;
+}
+.text-transparent {
+  color: transparent;
+}
