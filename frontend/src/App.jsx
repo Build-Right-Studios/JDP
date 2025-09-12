@@ -6,7 +6,9 @@ import OilPage from './Pages/OilPage.jsx'
 import Spices from './Pages/Spices.jsx'
 import Ghee from './Pages/Ghee.jsx'
 import Flour from './Pages/Flour.jsx'
-import Navbar from './components/navbar.jsx'
+import About from './Pages/About.jsx'
+import Contact from './Pages/Contact.jsx'
+import Navbar from './components/Navbar.jsx'
  
 
 
@@ -14,13 +16,15 @@ function App() {
 
   return (
     <>
-     <Navbar></Navbar>
+     <Navbar />
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/shop/oil" element={<OilPage />}></Route>
       <Route path="/shop/spices" element={<Spices />}></Route>
       <Route path="/shop/ghee" element={<Ghee />}></Route>
       <Route path="/shop/flour" element={<Flour />}></Route>
+      <Route path="/about-us" element={<About />}></Route>
+      <Route path="/contact-us" element={<Contact />}></Route>
 
     </Routes>
    
