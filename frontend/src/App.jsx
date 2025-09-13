@@ -18,7 +18,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <GreenBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/shop/oil" element={<OilPage />}></Route>
