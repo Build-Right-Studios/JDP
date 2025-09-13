@@ -7,10 +7,7 @@ import HumareKhass from '../components/HumareKhass'
 function Home() {
     return (
         <div>
-            <HeroSection />
-            <Welcome />
-            <Categories />
-            <HumareKhass />
+            
         </div>
     )
 }
