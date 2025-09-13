@@ -12,8 +12,9 @@ function Navbar() {
             <nav className="bg-white shadow-md sticky top-0 z-50">
                 <div className="container mx-auto flex justify-between items-center py-4 px-6">
                     {/* Logo Section */}
-                    <div>
+                    <div className='flex flex-row items-center'>
                         <Link to='/'><img src={wcise_logo} alt="WCISE Logo" className='h-16 w-auto px-2' /></Link>
+                        <h2 className='font-medium text-xl lg:text-2xl poppins-semibold'>JAIN DESI AND PURE</h2>
                     </div>
 
                     {/* Desktop Menu */}
@@ -54,8 +55,8 @@ function Navbar() {
                         ✕
                     </button>
                     <NavLink to="/" onClick={() => setOpen(false)} className="text-gray-800 font-medium py-2 border-b hover:text-blue-500 transition">HOME</NavLink>
-                    <NavLink to="/about-us" onClick={() => setOpen(false)} className="text-gray-800 font-medium py-2 border-b hover:text-blue-500 transition">ABOUT US</NavLink>
-                    <NavLink to="/contact-us" onClick={() => setOpen(false)} className="text-gray-800 font-medium py-2 border-b hover:text-blue-500 transition">CONTACT US</NavLink>
+                    <NavLink to="/about" onClick={() => setOpen(false)} className="text-gray-800 font-medium py-2 border-b hover:text-blue-500 transition">ABOUT US</NavLink>
+                    <NavLink to="/contact" onClick={() => setOpen(false)} className="text-gray-800 font-medium py-2 border-b hover:text-blue-500 transition">CONTACT US</NavLink>
                     <NavLink to="/" onClick={() => setOpen(false)} className="inline-block w-fit px-4 py-2 mt-2 bg-gray-200 text-gray-800 font-semibold rounded hover:bg-blue-500 hover:text-white transition">ORDER NOW</NavLink>
                 </div>
             )}

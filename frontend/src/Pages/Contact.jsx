@@ -1,4 +1,6 @@
 import React from "react";
+import Hero from "../components/AboutUs/hero";
+import GreenBar from "../components/AboutUs/GreenBar";
 
 const Contact = () => {
   const stores = [
@@ -17,11 +19,10 @@ const Contact = () => {
   return (
     <div>
      
-      <div className="bg-black flex items-center justify-center min-h-screen">
+      <div className="bg-black flex items-center justify-center">
         <div className="border-x-8 rounded-lg shadow-lg">
-          <h1 className="text-6xl font-extrabold tracking-wide text-white">
-            CONTACT US
-          </h1>
+          <Hero name="CONTACT"/>
+          <GreenBar />
         </div>
       </div>
 
