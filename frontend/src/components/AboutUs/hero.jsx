@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Hero = () => {
+const Hero = (props) => {
   return (
-    <div className="flex items-center justify-center h-screen bg-black">
-      <div className="text-white text-7xl font-bold tracking-widest uppercase animate-[flyInAndBreath_4s_ease-in-out_infinite]">
-        <h1 className="text-stroke-2">About Us</h1>
+    <div className="flex items-center justify-center min-h-[470px] lg:h-screen bg-black">
+      <div className="text-white text-xl lg:text-7xl font-bold tracking-widest uppercase animate-[flyInAndBreath_4s_ease-in-out_infinite]">
+        <h1 className="text-stroke-2">{props.name}</h1>
       </div>
       <style jsx>{`
         .text-stroke-2 {
