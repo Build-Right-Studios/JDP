@@ -1,35 +1,40 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const GreenBar = () => {
+
+  const marqueeVariants = {
+    animate: {
+      x: ["0%", "-50%"],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 20,
+          ease: "linear",
+        },
+      },
+    },
+  };
+
   return (
     <div className="flex items-center justify-center h-24 bg-[#5c8a40] overflow-hidden">
-      <div className="flex flex-grow text-white font-bold whitespace-nowrap marquee-container">
-        {/* We now use a single h1 element with the text repeated. */}
-        <h1 className="text-2xl font-semibold px-4 marquee-text">
+      <div className="flex flex-grow text-white font-bold whitespace-nowrap">
+        <motion.h1
+          className="text-2xl font-semibold px-4"
+          variants={marqueeVariants}
+          animate="animate"
+        >
           Traditional&nbsp;Ingredients&nbsp;•&nbsp;&nbsp;Traditional&nbsp;Ingredients&nbsp;•&nbsp;&nbsp;Traditional&nbsp;Ingredients&nbsp;•&nbsp;&nbsp;Traditional&nbsp;Ingredients&nbsp;•
-        </h1>
-        {/* The second h1 element is now a duplicate of the first for a seamless loop. */}
-        <h1 className="text-2xl font-semibold px-4 marquee-text">
+        </motion.h1>
+        <motion.h1
+          className="text-2xl font-semibold px-4"
+          variants={marqueeVariants}
+          animate="animate"
+        >
           Traditional&nbsp;Ingredients&nbsp;•&nbsp;&nbsp;Traditional&nbsp;Ingredients&nbsp;•&nbsp;&nbsp;Traditional&nbsp;Ingredients&nbsp;•&nbsp;&nbsp;Traditional&nbsp;Ingredients&nbsp;•
-        </h1>
+        </motion.h1>
       </div>
-      <style jsx>{`
-        .marquee-container {
-          /* Use a container that can hold the two elements side by side. */
-          display: flex;
-          animation: marquee 20s linear infinite;
-        }
-
-        @keyframes marquee {
-          /* The animation now moves the full width of the text element. */
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(-100%);
-          }
-        }
-      `}</style>
     </div>
   );
 };
