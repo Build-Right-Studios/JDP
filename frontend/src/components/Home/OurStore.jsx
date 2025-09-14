@@ -4,7 +4,7 @@ import bgImage from '../../images/bg.jpg';        // your spices & oils image
 
 function OurStore() {
   return (
-    <div className="relative bg-gray-100 mt-14 overflow-hidden">
+    <div className="relative mt-14 overflow-hidden">
       {/* Background Image with Light Opacity */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10"
