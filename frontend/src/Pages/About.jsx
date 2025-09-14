@@ -1,5 +1,5 @@
 import React from 'react'
-import WelcomeSection from '../components/Welcome.jsx'
+// import WelcomeSection from '../components/Welcome.jsx'
 import Hero from '../components/AboutUs/hero.jsx'
 import GreenBar from '../components/AboutUs/GreenBar.jsx'
 import OurMission from '../components/AboutUs/OurMission.jsx'
