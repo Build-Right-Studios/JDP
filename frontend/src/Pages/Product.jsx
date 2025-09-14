@@ -1,5 +1,6 @@
 import React from 'react'
-import OilPage from './OilPage';
+import Hero from '../components/Products/Hero.jsx'
+import OilPage from '../components/Products/OilPage.jsx'
 
 
 function Product() {
