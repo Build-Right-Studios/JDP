@@ -11,6 +11,7 @@ import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import GreenBar from './components/AboutUs/GreenBar.jsx'
+import Product from './Pages/Product.jsx'
 
 
 function App() {
@@ -18,7 +19,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <GreenBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/shop/oil" element={<OilPage />}></Route>
@@ -26,6 +26,7 @@ function App() {
         <Route path="/shop/ghee" element={<Ghee />}></Route>
         <Route path="/shop/flour" element={<Flour />}></Route>
         <Route path='/about' element={<About />} />
+        <Route path='/product/:id' element={<Product />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
