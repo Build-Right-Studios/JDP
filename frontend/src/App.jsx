@@ -11,7 +11,7 @@ import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import GreenBar from './components/AboutUs/GreenBar.jsx'
-
+import Products from './Pages/Products.jsx'
 
 
 function App() {
