@@ -84,7 +84,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-xs">
-            Copyright © 2020. All Rights Reserved.
+            Build Right Now © 2025. All Rights Reserved.
           </div>
         </div>
       </div>
