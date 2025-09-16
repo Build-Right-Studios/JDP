@@ -15,7 +15,16 @@ function Home() {
             <div className="w-full h-[90vh]"> 
                 <img 
                     src={bannerImage} 
+                     srcSet={`
+                        ${bannerImage} 400w,
+                        ${bannerImage} 800w,
+                        ${bannerImage} 1200w
+                    `}
+                     sizes="(max-width: 600px) 100vw,
+                           (max-width: 1200px) 100vw,
+                           100vw"
                     className="w-full h-[90vh] object-cover" 
+                    
                 />
             </div>
             <GreenBar />
