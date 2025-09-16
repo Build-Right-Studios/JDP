@@ -1,14 +1,15 @@
 // TestimonialsMarquee.jsx
 import React from "react";
-import bus2 from "../images/bus2.png"; // optional image per card
+// import bus2 from "../images/bus2.png"; // optional image per card
+import bus2 from '../../images/jdp_logo.jpg'
 
 const testimonials = [
-  {
-    text:
-      "Join thousands of satisfied travelers who trust Choudhary Tours & Travels Pvt. Ltd. (CTTPL) for safe, affordable, and tech-enabled mobility solutions. With 35+ years of expertise and a fleet of 4,000+ vehicles, we're here to make your journeys comfortable and stress-free. Contact us today and let's plan your next adventure!",
-    author: "Anju Choudhary",
-    role: "Chief Technical Officer, CTTPL",
-  },
+  // {
+  //   text:
+  //     "Join thousands of satisfied travelers who trust Choudhary Tours & Travels Pvt. Ltd. (CTTPL) for safe, affordable, and tech-enabled mobility solutions. With 35+ years of expertise and a fleet of 4,000+ vehicles, we're here to make your journeys comfortable and stress-free. Contact us today and let's plan your next adventure!",
+  //   author: "Anju Choudhary",
+  //   role: "Chief Technical Officer, CTTPL",
+  // },
   {
     text:
       "Reliable service, friendly drivers and great vehicles. Highly recommended for corporate travel and tours.",
@@ -33,8 +34,8 @@ export default function Comments() {
   return (
     <section className="py-12 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4">
-        <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 ml-6 mb-8">
-          What our <span className="text-red-600">Clients</span> Say?
+        <h3 className="text-5xl font-extrabold text-center mt-8 mb-8 font-['Poppins']">
+          What our <span className="text-[#d4a019]">Clients</span> Say?
         </h3>
 
         {/* marquee wrapper */}

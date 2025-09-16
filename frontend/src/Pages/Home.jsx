@@ -7,6 +7,7 @@ import Hero from '../components/AboutUs/hero'
 import GreenBar from '../components/AboutUs/GreenBar'
 import BestSeller from '../components/Home/BestSeller'
 import OurStore from '../components/Home/OurStore'
+import Comments from '../components/Home/Comments'
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             <Categories />
             <OurStore />
             <BestSeller/>
+            <Comments />
         </div>
     )
 }
