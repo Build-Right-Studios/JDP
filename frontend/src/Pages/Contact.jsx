@@ -1,6 +1,8 @@
 import React from "react";
 import Hero from "../components/AboutUs/hero";
 import GreenBar from "../components/AboutUs/GreenBar";
+import GetinTouch from '../components/Contact/Getintouch';
+import GetinTouch2 from '../components/Contact/Getintouch2';
 
 const Contact = () => {
   const stores = [
@@ -31,7 +33,7 @@ const Contact = () => {
           OUR STORES
         </h3>
 
-        <div className="w-full max-w-3xl px-6">
+        {/* <div className="w-full max-w-3xl px-6">
           {stores.map((store, index) => (
             <div
               key={index}
@@ -50,7 +52,9 @@ const Contact = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+        <GetinTouch />
+        <GetinTouch2 />
       </div>
 
 
@@ -103,7 +107,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
     </div>
   );
 };

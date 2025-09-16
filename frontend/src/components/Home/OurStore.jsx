@@ -14,7 +14,7 @@ function OurStore() {
       {/* Content */}
       <div className="relative z-10">
         <h2 className="text-5xl font-extrabold text-center mt-8 mb-8 font-['Poppins']">
-          OUR STORE
+          Our Store
         </h2>
 
         <div className="max-w-md mx-auto px-4">
