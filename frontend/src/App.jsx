@@ -10,7 +10,6 @@ import Navbar from './components/Navbar.jsx'
 import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
-import GreenBar from './components/AboutUs/GreenBar.jsx'
 import Product from './Pages/Product.jsx'
 
 
@@ -21,12 +20,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/shop/oil" element={<OilPage />}></Route>
-        <Route path="/shop/spices" element={<Spices />}></Route>
-        <Route path="/shop/ghee" element={<Ghee />}></Route>
-        <Route path="/shop/flour" element={<Flour />}></Route>
         <Route path='/about' element={<About />} />
-        <Route path='/product/:id' element={<Product />} />
+        <Route path='/product' element={<Product />} />
+        <Route path="/product/oil" element={<OilPage />}></Route>
+        <Route path="/product/spices" element={<Spices />}></Route>
+        <Route path="/product/ghee" element={<Ghee />}></Route>
+        <Route path="/product/flour" element={<Flour />}></Route>
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
