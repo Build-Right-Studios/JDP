@@ -4,6 +4,7 @@ import Spicebanner from '../../images/spice_banner.jpg';
 import Spicebanner2 from '../../images/spice2banner.jpg';
 import Gheebanner from '../../images/gheebanner.jpg';
 import Oilbanner2 from '../../images/oilbanner2.jpg';
+import Flour from '../../images/flourbanner.jpg';
 
 const Gallery = () => {
   return (
@@ -75,7 +76,7 @@ const Gallery = () => {
           {/* Bottom-right image (square) */}
           <div className="relative rounded-xl overflow-hidden shadow-lg">
             <img 
-              src="https://placehold.co/600x400/808080/white?text=Sustainability" 
+              src={Flour}
               alt="Sustainability" 
               className="w-full h-full object-cover rounded-xl"
             />
