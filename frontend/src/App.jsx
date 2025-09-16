@@ -11,6 +11,7 @@ import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import Product from './Pages/Product.jsx'
+import ProductData from './Pages/ProductData.jsx'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/product/spices" element={<Spices />}></Route>
         <Route path="/product/ghee" element={<Ghee />}></Route>
         <Route path="/product/flour" element={<Flour />}></Route>
+        <Route path = '/product/:productId' element = {<ProductData />}/>
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
