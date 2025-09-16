@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/AboutUs/hero";
 import GreenBar from "../components/AboutUs/GreenBar";
+import GetinTouch from '../components/Contact/Getintouch';
 
 const Contact = () => {
   const stores = [
@@ -129,6 +130,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
+      <GetinTouch />
     </div>
   );
 };
