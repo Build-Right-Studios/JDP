@@ -41,8 +41,8 @@ const Faq = () => {
                 className="w-full text-left flex justify-between items-center focus:outline-none"
                 onClick={() => toggleAnswer(index)}
               >
-                {/* === CHANGE IS HERE === */}
-                <span className="text-lg font-sans text-green-700">
+              
+                <span className="text-xl font-sans text-green-700">
                   {faq.question}
                 </span>
                 <span className="text-2xl text-gray-400">
@@ -50,8 +50,8 @@ const Faq = () => {
                 </span>
               </button>
               {openIndex === index && (
-                // === AND CHANGE IS HERE ===
-                <p className="mt-4 text-gray-600 font-sans leading-relaxed">
+               
+                <p className="mt-4 text-lg text-gray-600 font-sans leading-relaxed">
                   {faq.answer}
                 </p>
               )}
