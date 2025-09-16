@@ -15,9 +15,9 @@ const products = [
       "Experience the delightful texture and health benefits of Cold Pressed Sunflower Oil, extracted naturally to retain nutrients and flavor. Perfect for cooking, frying, and everyday meals.",
     images: [
       "https://i0.wp.com/kumarmetal.com/wp-content/uploads/2022/04/sunflower-oil-properties-and-manufacture-1.png?fit=1200%2C675&ssl=1",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFWP6Q63yFR3H7eP0TzWThTT2MS2wzidO3lQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSIzHtIInPErOoSXHMT6ChEjCtOT37H1uDKw&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZgnfEc5D4AAs1HzUNqvqtVoJzH_HAFO--Dw&s",
+      "https://vijayimpex.co.in/wp-content/uploads/2021/05/PID-140270_190518-SunflowerSeedOil-1VI.jpg",
+      "https://i0.wp.com/www.ozioneoil.com/wp-content/uploads/2023/05/refined-sunflower-oil.jpg?fit=500%2C500&ssl=1",
+      "https://vijayimpex.co.in/wp-content/uploads/2021/05/PID-140270_190518-SunflowerSeedOil-1VI.jpg",
     ],
   },
   {
@@ -30,7 +30,7 @@ const products = [
       "Pure Mustard Oil with natural pungency, ideal for traditional Indian cooking, pickles, and enhancing flavor in meals.",
     images: [
       "https://wockhardthospitals.com/wp-content/uploads/2021/04/Mustard-Oil.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaxhV0L6XrH3z6lUsQx7i8ikn1_fj2Stm4uQ&s",
+      "https://cdn2.stylecraze.com/wp-content/uploads/2013/08/65-iStock-500478982.jpg.webp",
     ],
   },
   {
@@ -43,6 +43,7 @@ const products = [
       "100% Organic Wheat Flour, stone-ground to preserve nutrients, making your chapatis softer and healthier.",
     images: [
       "https://images.jdmagicbox.com/quickquotes/images_main/organic-wheat-flour-3te-1kg-2022114078-5m48giir.jpg",
+      "https://media.istockphoto.com/id/480241244/photo/bowl-filled-with-wheat-flour.jpg?s=612x612&w=0&k=20&c=GfezwqMcv8sfHjL750Ujk_rEc-4rQB5fpM2MRTizTi0="
     ],
   },
 ];

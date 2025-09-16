@@ -12,7 +12,7 @@ import bannerImage from '../images/homebanner.png';
 function Home() {
     return (
         <div>
-            <div className="w-full h-[90vh]"> 
+            <div className="w-[360px] lg:w-full h-[90vh] object-contain"> 
                 <img 
                     src={bannerImage} 
                      srcSet={`

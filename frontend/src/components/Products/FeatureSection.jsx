@@ -47,7 +47,7 @@ function FeatureSection() {
                     className="flex flex-col items-center justify-center p-6 border-1 border-[#5c8a40] shadow-sm text-center"
                 >
                     {feature.icon}
-                    <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-800 poppins-regular">
                         {feature.title}
                     </h3>
                 </div>
