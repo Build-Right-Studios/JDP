@@ -1,6 +1,9 @@
 import React from 'react';
 import Oilbanner from '../../images/oil_banner.jpg';
 import Spicebanner from '../../images/spice_banner.jpg';
+import Spicebanner2 from '../../images/spice2banner.jpg';
+import Gheebanner from '../../images/gheebanner.jpg';
+import Oilbanner2 from '../../images/oilbanner2.jpg';
 
 const Gallery = () => {
   return (
@@ -35,7 +38,7 @@ const Gallery = () => {
           {/* Bottom-left image (tall) */}
           <div className="relative rounded-xl overflow-hidden shadow-lg">
             <img 
-              src="https://placehold.co/600x400/808080/white?text=Our+Awards" 
+              src={Spicebanner2} 
               alt="Our Awards" 
               className="w-full h-full object-cover rounded-xl"
             />
@@ -48,7 +51,7 @@ const Gallery = () => {
           <div className="flex flex-col gap-6 col-span-1 sm:col-span-2 lg:col-span-1">
             <div className="relative rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="https://placehold.co/600x400/808080/white?text=Principles" 
+                src={Gheebanner}
                 alt="Principles" 
                 className="w-full h-full object-cover rounded-xl"
               />
@@ -59,7 +62,7 @@ const Gallery = () => {
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="https://placehold.co/600x400/808080/white?text=Better+World" 
+                src={Oilbanner2}
                 alt="Better World" 
                 className="w-full h-full object-cover rounded-xl"
               />
