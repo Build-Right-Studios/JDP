@@ -1,4 +1,6 @@
 import React from 'react';
+import Oilbanner from '../../images/oil_banner.jpg';
+import Spicebanner from '../../images/spice_banner.jpg';
 
 const Gallery = () => {
   return (
@@ -9,7 +11,7 @@ const Gallery = () => {
           {/* Top-left image (wide) */}
           <div className="relative col-span-1 lg:col-span-2 rounded-xl overflow-hidden shadow-lg">
             <img 
-              src="https://placehold.co/1200x400/808080/white?text=Our+Heritage" 
+              src={Oilbanner} 
               alt="Our Heritage" 
               className="w-full h-full object-cover rounded-xl"
             />
@@ -21,7 +23,7 @@ const Gallery = () => {
           {/* Top-right image (square) */}
           <div className="relative rounded-xl overflow-hidden shadow-lg">
             <img 
-              src="https://placehold.co/600x400/808080/white?text=Our+Mission" 
+              src={Spicebanner} 
               alt="Our Mission" 
               className="w-full h-full object-cover rounded-xl"
             />
