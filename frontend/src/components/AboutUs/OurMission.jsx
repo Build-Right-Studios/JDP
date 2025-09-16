@@ -1,6 +1,7 @@
 import React from 'react';
+import ourMissionImg from '../../images/our-mission.png';
 
-// 1. A new, reusable component for each mission list item.
+
 const MissionPoint = ({ text }) => (
   <li className="flex items-start">
     <svg 
@@ -19,7 +20,6 @@ const MissionPoint = ({ text }) => (
   </li>
 );
 
-// 2. Mission statement data is kept in an array for easy updates.
 const missionPoints = [
   "Fostering sustainable growth and green development",
   "Innovating for a sustainable future through technology",
@@ -30,12 +30,12 @@ const missionPoints = [
 const OurMission = () => {
   return (
     <div className="flex items-center justify-center p-8 bg-gray-100 min-h-screen font-sans">
-      <div className="flex flex-col lg:flex-row items-center bg-white rounded-3xl shadow-xl p-8 max-w-6xl mx-auto overflow-hidden">
+      <div className="flex flex-col lg:flex-row items-center rounded-3xl p-8 max-w-6xl mx-auto overflow-hidden">
         
         {/* Left Section: Single Image */}
         <div className="w-full lg:w-1/2 p-4">
           <img 
-            src="https://placehold.co/600x600/34D399/white?text=Our+Vision" 
+            src={ourMissionImg} 
             alt="A modern architectural building representing the company's vision" 
             className="w-full h-full object-cover rounded-3xl"
           />
@@ -49,7 +49,7 @@ const OurMission = () => {
           </p>
 
           <ul className="space-y-4">
-            {/* 3. We now map over the array to generate the list dynamically. */}
+            {/* We now map over the array to generate the list dynamically. */}
             {missionPoints.map((point, index) => (
               <MissionPoint key={index} text={point} />
             ))}
