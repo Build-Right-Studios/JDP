@@ -8,18 +8,26 @@ import GreenBar from '../components/AboutUs/GreenBar'
 import BestSeller from '../components/Home/BestSeller'
 import OurStore from '../components/Home/OurStore'
 import Comments from '../components/Home/Comments'
+import bannerImage from '../../images/homebanner.png';
 
 function Home() {
     return (
         <div>
-            <Hero name ="HOME"/>
+            <div className="w-full"> 
+                <img 
+                    src={bannerImage} 
+                    alt="Home Banner" 
+                    className="w-full h-auto object-cover" 
+                />
+            </div>
+
             <GreenBar />
             <Categories />
             <OurStore />
             <BestSeller/>
             <Comments />
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;
