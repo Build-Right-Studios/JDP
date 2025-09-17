@@ -1,5 +1,5 @@
 import React from 'react';
-import videoFile from '../../Slider/Pure(1).mp4';  // ✅ keep filename clean (no spaces or parentheses)
+import videoFile from '../../Slider/pure1.mp4';  // ✅ keep filename clean (no spaces or parentheses)
 import bgImage from '../../images/bg.jpg';        // your spices & oils image
 
 function OurStore() {
