@@ -22,11 +22,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path='/about' element={<About />} />
-        <Route path='/product' element={<Product />} />
-        <Route path="/product/oil" element={<OilPage />}></Route>
-        <Route path="/product/spices" element={<Spices />}></Route>
-        <Route path="/product/ghee" element={<Ghee />}></Route>
-        <Route path="/product/flour" element={<Flour />}></Route>
+        <Route path='/products' element={<Product />} />
+        <Route path="/products/oils" element={<OilPage />}></Route>
+        <Route path="/products/spices" element={<Spices />}></Route>
+        <Route path="/products/ghee" element={<Ghee />}></Route>
+        <Route path="/products/flours" element={<Flour />}></Route>
         <Route path = '/product/:productId' element = {<ProductData />}/>
         <Route path="/contact" element={<Contact />} />
       </Routes>

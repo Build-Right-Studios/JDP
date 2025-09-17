@@ -10,16 +10,16 @@ function Categories() {
         <div className='mt-2'>
             <h2 className="text-5xl font-extrabold text-center mt-8 mb-8 font-['Poppins']">Popular Categories</h2>
             <div className='grid grid-cols-1 lg:grid-cols-2 px-2 mx-auto items-start place-items-center gap-y-4 lg:gap-y-8'>
-                <Link to='/product/spices'>
+                <Link to='/products/spices'>
                     <img src={spice} alt="" className='h-[12vh] w-full lg:h-[250px] lg:w-[700px] object-cover'/>
                 </Link>
-                <Link to='/product/oil'>
+                <Link to='/products/oils'>
                     <img src={oil} alt="" className='h-[12vh] w-full lg:h-[250px] lg:w-[700px] object-cover'/>
                 </Link>
-                <Link to='/product/flour'>
+                <Link to='/products/flours'>
                     <img src={flour} alt="" className='h-[12vh] w-full lg:h-[250px] lg:w-[700px] object-cover'/>
                 </Link>
-                <Link to='/product/ghee'>
+                <Link to='/products/ghee'>
                     <img src={ghee} alt="" className='h-[12vh] w-full lg:h-[250px] lg:w-[700px] object-cover'/>
                 </Link>
             </div>

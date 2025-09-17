@@ -29,7 +29,7 @@ function Navbar() {
                                 <span className="relative z-10 group-hover:text-[#d2a01d] transition">ABOUT US</span>
                                 <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#d2a01d] transition-all duration-300 group-hover:w-full rounded"></span>
                             </NavLink>
-                             <NavLink to="/product" className="relative inline-block py-1 px-1 text-gray-800 font-semibold group">
+                             <NavLink to="/products" className="relative inline-block py-1 px-1 text-gray-800 font-semibold group">
                                 <span className="relative z-10 group-hover:text-[#d2a01d] transition">PRODUCTS</span>
                                 <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-[#d2a01d] transition-all duration-300 group-hover:w-full rounded"></span>
                             </NavLink>
@@ -61,6 +61,7 @@ function Navbar() {
                     </button>
                     <NavLink to="/" onClick={() => setOpen(false)} className="text-gray-800 font-medium py-2 border-b hover:text-blue-500 transition">HOME</NavLink>
                     <NavLink to="/about" onClick={() => setOpen(false)} className="text-gray-800 font-medium py-2 border-b hover:text-blue-500 transition">ABOUT US</NavLink>
+                    <NavLink to="/products" onClick={() => setOpen(false)} className="text-gray-800 font-medium py-2 border-b hover:text-blue-500 transition">PRODUCTS</NavLink>
                     <NavLink to="/contact" onClick={() => setOpen(false)} className="text-gray-800 font-medium py-2 border-b hover:text-blue-500 transition">CONTACT US</NavLink>
                     <NavLink to="/" onClick={() => setOpen(false)} className="inline-block w-fit px-4 py-2 mt-2 bg-gray-200 text-gray-800 font-semibold rounded hover:bg-blue-500 hover:text-white transition">ORDER NOW</NavLink>
                 </div>

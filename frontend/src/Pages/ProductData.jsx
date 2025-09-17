@@ -1,52 +1,8 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import GeneralInfo from '../components/Products/GeneralInfo'
+import GeneralInfo from "../components/Products/GeneralInfo";
 import FeatureSection from "../components/Products/FeatureSection";
-
-// Sample products data
-const products = [
-  {
-    _id: 1,
-    name: "Cold Pressed Sunflower Oil",
-    price: "₹299",
-    rating: 4,
-    reviews: 122,
-    description:
-      "Experience the delightful texture and health benefits of Cold Pressed Sunflower Oil, extracted naturally to retain nutrients and flavor. Perfect for cooking, frying, and everyday meals.",
-    images: [
-      "https://i0.wp.com/kumarmetal.com/wp-content/uploads/2022/04/sunflower-oil-properties-and-manufacture-1.png?fit=1200%2C675&ssl=1",
-      "https://vijayimpex.co.in/wp-content/uploads/2021/05/PID-140270_190518-SunflowerSeedOil-1VI.jpg",
-      "https://i0.wp.com/www.ozioneoil.com/wp-content/uploads/2023/05/refined-sunflower-oil.jpg?fit=500%2C500&ssl=1",
-      "https://vijayimpex.co.in/wp-content/uploads/2021/05/PID-140270_190518-SunflowerSeedOil-1VI.jpg",
-    ],
-  },
-  {
-    _id: 2,
-    name: "Pure Mustard Oil",
-    price: "₹249",
-    rating: 5,
-    reviews: 89,
-    description:
-      "Pure Mustard Oil with natural pungency, ideal for traditional Indian cooking, pickles, and enhancing flavor in meals.",
-    images: [
-      "https://wockhardthospitals.com/wp-content/uploads/2021/04/Mustard-Oil.jpg",
-      "https://cdn2.stylecraze.com/wp-content/uploads/2013/08/65-iStock-500478982.jpg.webp",
-    ],
-  },
-  {
-    _id: 3,
-    name: "Organic Wheat Flour",
-    price: "₹99",
-    rating: 4,
-    reviews: 75,
-    description:
-      "100% Organic Wheat Flour, stone-ground to preserve nutrients, making your chapatis softer and healthier.",
-    images: [
-      "https://images.jdmagicbox.com/quickquotes/images_main/organic-wheat-flour-3te-1kg-2022114078-5m48giir.jpg",
-      "https://media.istockphoto.com/id/480241244/photo/bowl-filled-with-wheat-flour.jpg?s=612x612&w=0&k=20&c=GfezwqMcv8sfHjL750Ujk_rEc-4rQB5fpM2MRTizTi0="
-    ],
-  },
-];
+import products from "../data/products.js";
 
 function ProductData() {
   const { productId } = useParams();

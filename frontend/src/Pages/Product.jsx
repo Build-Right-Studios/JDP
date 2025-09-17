@@ -1,69 +1,62 @@
-import React, { useState, useEffect } from 'react'
-import Hero from '../components/Products/Hero.jsx'
-import OilPage from '../components/Products/OilPage.jsx'
-import GreenBar from '../components/AboutUs/GreenBar.jsx'
-import ProductItem from '../components/Products/ProductItem.jsx'
+// src/pages/Product.jsx
+import React from "react";
+import { Link } from "react-router-dom";
+import ProductItem from "../components/Products/ProductItem.jsx";
+import products from "../data/products.js";
 
-function Product() {
-
-  // Array of products with just names
-  const products = [
-    {
-      _id: 1,
-      name: "Cold Pressed Sunflower Oil",
-      image: "https://i0.wp.com/kumarmetal.com/wp-content/uploads/2022/04/sunflower-oil-properties-and-manufacture-1.png?fit=1200%2C675&ssl=1",
-    },
-    {
-      _id: 2,
-      name: "Pure Mustard Oil",
-      image: "https://wockhardthospitals.com/wp-content/uploads/2021/04/Mustard-Oil.jpg",
-    },
-    {
-      _id: 3,
-      name: "Organic Wheat Flour",
-      image: "https://images.jdmagicbox.com/quickquotes/images_main/organic-wheat-flour-3te-1kg-2022114078-5m48giir.jpg",
-    },
-    {
-      _id: 4,
-      name: "Natural Ghee",
-      image: "https://goodfood.ae/cdn/shop/files/Bilona_Cow_Ghee.jpg?v=1722433739",
-    },
-    {
-      _id: 5,
-      name: "Fresh Coconut Oil",
-      image: "https://www.ishtaorganics.in/cdn/shop/files/Fireflycoconutoilin2bottlesonein500mlanotherin1lwithacoconutinsideandwhiebackgrou.jpg?v=1712694482",
-    },
-  ];
-
-  const [filterProducts, setFilterProducts] = useState([]);
-
-  useEffect(() => {
-    // Initially show all products
-    setFilterProducts(products);
-  }, []);
+// Helper to render section
+const ProductSection = ({ title, category, products }) => {
+  const previewProducts = products.slice(0, 3); // show only 3 items in preview
 
   return (
-    <div>
-      {/* <Hero name="PRODUCTS"></Hero> */}
-      {/* <GreenBar></GreenBar> */}
-      {/* <OilPage></OilPage> */}
-      {/* Grid of Products */}
-      <div className='gap-1 sm:gap-10 p-10 border-t'>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
-          {filterProducts.map((item, index) => (
-            <ProductItem
-              key={index} // Use unique `_id` instead of index
-              id={item._id}
-              image={item.image}
-              name={item.name}
-              price={item.price}
-            />
-          ))}
-        </div>
+    <div className="mb-12">
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold">{title}</h2>
+        <Link
+          to={`/products/${category}`}
+          className="text-green-700 hover:underline"
+        >
+          View More →
+        </Link>
       </div>
 
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        {products.map((item) => (
+          <ProductItem
+            key={item._id}
+            id={item._id}
+            image={item.image}
+            name={item.name}
+          />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Product;
+export default function Product() {
+  return (
+    <div className="p-10 border-t">
+      <ProductSection
+        title="Oils"
+        category="oils"
+        products={products.filter((p) => p.category === "oils")}
+      />
+      <ProductSection
+        title="Spices"
+        category="spices"
+        products={products.filter((p) => p.category === "spices")}
+      />
+      <ProductSection
+        title="Flours"
+        category="flours"
+        products={products.filter((p) => p.category === "flours")}
+      />
+      <ProductSection
+        title="Ghee"
+        category="ghee"
+        products={products.filter((p) => p.category === "ghee")}
+      />
+    </div>
+  );
+}
