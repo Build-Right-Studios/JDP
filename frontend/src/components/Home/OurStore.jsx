@@ -22,7 +22,7 @@ function OurStore() {
             className="w-full max-h-[60vh] lg:max-h-[80vh] object-contain"
             playsInline
           >
-            <source src="/video/pure1.mp4" type="video/mp4" />
+            <source src="/pure1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
