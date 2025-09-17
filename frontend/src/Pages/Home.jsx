@@ -18,9 +18,9 @@ function Home() {
                     className="w-screen h-[30vh] object-fill" 
                 />
             </div>
-            {/* <GreenBar /> */}
             <Categories />
             <OurStore />
+            <GreenBar />
             <BestSeller/>
             <Comments />
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function BestSellerCard(props) {
     return (
-        <div className='w-[420px] bg-[whitesmoke] border-2 border-gray-200'>
+        <div className='w-full bg-[whitesmoke] border-2 border-gray-200'>
             <div className="overflow-hidden w-full">
                 <div style={{backgroundColor: props.color}} className="relative py-8 text-center text-white text-3xl font-bold">
                     {props.title || "Sun Flower Oil"}

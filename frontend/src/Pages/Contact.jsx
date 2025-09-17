@@ -5,19 +5,6 @@ import GetinTouch from '../components/Contact/Getintouch';
 import GetinTouch2 from '../components/Contact/Getintouch2';
 
 const Contact = () => {
-  const stores = [
-    {
-      name: "Jain Desi & Pure",
-      address: "Noida sec 62",
-      phone: "+91 XXXXXXXXXX",
-    },
-    {
-      name: "Jain Desi & Pure",
-      address: "Noida sec 62",
-      phone: "+91 XXXXXXXXXX",
-    },
-  ];
-
   return (
     <div>
 
@@ -60,10 +47,10 @@ const Contact = () => {
 
       <div className="bg-white min-h-screen flex flex-col justify-center items-center px-10 py-10">
         <div className="w-full max-w-6xl">
-          <h2 className="text-6xl font-bold uppercase tracking-wide text-center mb-4">
+          <h2 className=" text-4xl lg:text-6xl font-bold uppercase tracking-wide text-center mb-4">
             GET IN TOUCH
           </h2>
-          <p className="text-4xl md:text-5xl font-extrabold text-center mb-12">
+          <p className="text-2xl lg:text-4xl md:text-5xl font-extrabold text-center mb-12">
             Love to hear from you !!
           </p>
 
