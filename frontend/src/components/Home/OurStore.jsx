@@ -1,5 +1,4 @@
 import React from 'react';
-import videoFile from '../../Slider/pure1.mp4';  // ✅ keep filename clean (no spaces or parentheses)
 import bgImage from '../../images/bg.jpg';        // your spices & oils image
 
 function OurStore() {
@@ -23,7 +22,7 @@ function OurStore() {
             className="w-full max-h-[60vh] lg:max-h-[80vh] object-contain"
             playsInline
           >
-            <source src="/Slider/pure1.mp4" type="video/mp4" />
+            <source src="./video/pure1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
