@@ -1,8 +1,5 @@
 import React from 'react'
-// import HeroSection from '../components/Hero'
 import Categories from '../components/Home/Categories';
-// import Welcome from '../components/Welcome'
-// import HumareKhass from '../components/HumareKhass'
 import GreenBar from '../components/AboutUs/GreenBar';
 import BestSeller from '../components/Home/BestSeller';
 import OurStore from '../components/Home/OurStore';
@@ -12,10 +9,10 @@ import bannerImage from '../images/homebanner.png';
 function Home() {
     return (
         <div>
-            <div className="w-screen lg:w-full"> 
+            <div className="w-full lg:w-full"> 
                 <img 
                     src={bannerImage} 
-                    className="w-screen h-[30vh] object-fill" 
+                    className="w-screen lg:h-[90vh] h-[30vh] object-fill" 
                 />
             </div>
             <Categories />

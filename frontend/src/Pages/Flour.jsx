@@ -10,7 +10,12 @@ export default function OilPage() {
       <h1 className="text-3xl font-bold mb-8">Our Flour</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {oils.map((item) => (
-          <ProductItem key={item._id} {...item} />
+          <ProductItem
+            key={item._id}
+            id={item._id}   // ✅ FIX: map _id → id
+            image={item.image}
+            name={item.name}
+          />
         ))}
       </div>
     </div>
