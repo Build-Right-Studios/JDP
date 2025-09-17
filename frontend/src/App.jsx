@@ -13,11 +13,14 @@ import Footer from './components/Footer.jsx'
 import Product from './Pages/Product.jsx'
 import ProductData from './Pages/ProductData.jsx'
 
+import ScrollToTop from './ScrollToTop.jsx'
+
 
 function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

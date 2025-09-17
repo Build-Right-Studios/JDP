@@ -5,7 +5,7 @@ function OurStore() {
   const shortVideoId = "PqngLfyGp_8";
 
   const embedUrl = `https://www.youtube.com/embed/${shortVideoId}?` +
-    `autoplay=0&mute=0&loop=1&playlist=${shortVideoId}&controls=1&rel=0&modestbranding=1&start=0`;
+    `autoplay=1&mute=1&loop=1&playlist=${shortVideoId}&controls=1&rel=0&modestbranding=1&start=0`;
 
   return (
     <div className="relative mt-14 overflow-hidden">
