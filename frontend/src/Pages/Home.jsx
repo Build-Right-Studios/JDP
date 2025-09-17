@@ -12,22 +12,13 @@ import bannerImage from '../images/homebanner.png';
 function Home() {
     return (
         <div>
-            <div className="w-[360px] lg:w-full h-[90vh] object-contain"> 
+            <div className="w-screen lg:w-full"> 
                 <img 
                     src={bannerImage} 
-                     srcSet={`
-                        ${bannerImage} 400w,
-                        ${bannerImage} 800w,
-                        ${bannerImage} 1200w
-                    `}
-                     sizes="(max-width: 600px) 100vw,
-                           (max-width: 1200px) 100vw,
-                           100vw"
-                    className="w-full h-[90vh] object-cover" 
-                    
+                    className="w-screen h-[30vh] object-fill" 
                 />
             </div>
-            <GreenBar />
+            {/* <GreenBar /> */}
             <Categories />
             <OurStore />
             <BestSeller/>
