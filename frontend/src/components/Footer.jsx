@@ -1,4 +1,7 @@
 import React from 'react';
+import jdp_logo from '../images/jdp_logo.jpg'
+import { Link, NavLink } from 'react-router-dom';
+import { FaEnvelope, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -7,13 +10,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           {/* Logo and Socials */}
           <div className="flex flex-col items-center md:items-start mb-8 md:mb-0 w-full md:w-1/4">
-            <img src="https://placehold.co/150x150/50C878/FFFFFF?text=Logo" alt="Company Logo" className="mb-4 rounded-full" />
+            <img src={jdp_logo} alt="Company Logo" className="h-16 w-auto px-2 mb-4 rounded-full" />
             <div className="flex space-x-4 text-gray-500">
-              <a href="#" className="hover:text-gray-900">
+              {/* <a href="#" className="hover:text-gray-900">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 5.09 3.738 9.313 8.602 10.158V15.75H6.28V12h2.322V9.32c0-2.298 1.39-3.565 3.442-3.565 1.002 0 1.86.075 2.106.108v2.41H13.62c-1.127 0-1.345.535-1.345 1.32V12h2.705l-.438 3.75H12.275v6.408C17.262 21.313 21 17.09 21 12c0-6.627-5.373-12-12-12z" />
                 </svg>
-              </a>
+              </a> */}
               <a href="#" className="hover:text-gray-900">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M12 2.163c3.2 0 3.58.01 4.85.071 3.25.163 4.706 1.761 4.869 4.869.06 1.27.07 1.65.07 4.85s-.01 3.58-.071 4.85c-.163 3.25-1.761 4.706-4.869 4.869-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.071c-3.25-.163-4.706-1.761-4.869-4.869-.06-1.27-.07-1.65-.07-4.85s.01-3.58.071-4.85c.163-3.25 1.761-4.706 4.869-4.869 1.27-.06 1.65-.07 4.85-.07zm0-2.163c-3.267 0-3.665.01-4.947.071-3.328.163-5.263 2.1-5.432 5.432-.06.28-.07.67-.07 4.947s.01 3.665.071 4.947c.163 3.328 2.1 5.263 5.432 5.432 1.282.06 1.68.07 4.947.07s3.665-.01 4.947-.071c3.328-.163 5.263-2.1 5.432-5.432.06-.28.07-.67.07-4.947s-.01-3.665-.071-4.947c-.163-3.328-2.1-5.263-5.432-5.432-1.282-.06-1.68-.07-4.947-.07z" />
@@ -21,68 +24,68 @@ const Footer = () => {
                   <path d="M18.2 4.1a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z" />
                 </svg>
               </a>
-              <a href="#" className="hover:text-gray-900">
+              {/* <a href="#" className="hover:text-gray-900">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M22.25 4.01c-.81.36-1.68.6-2.58.71a4.99 4.99 0 0 0-3.48-1.39c-3.15 0-5.71 2.56-5.71 5.71s2.56 5.71 5.71 5.71a5.61 5.61 0 0 0 3.73-1.42 2.22 2.22 0 0 0 1.25 1.25c-.26.11-.53.21-.8.31a.53.53 0 0 0-.25.59c-.06.26-.14.52-.25.77a.53.53 0 0 0 .26.59c.27.14.56.26.85.35a.53.53 0 0 0 .54-.25c.16-.29.28-.6.38-.92.1-.33.17-.67.21-1.01a.53.53 0 0 0-.22-.64c-.11-.09-.24-.15-.38-.2a.53.53 0 0 0-.58.21c-.09.18-.17.37-.25.56-.08.19-.15.39-.2.6a.53.53 0 0 0-.22.64c-.1.09-.22.15-.36.21a.53.53 0 0 0-.57-.22c-.17-.11-.34-.23-.5-.36-.16-.13-.31-.27-.45-.42a.53.53 0 0 0-.61.12c-.11.13-.2.27-.27.42-.08.16-.14.33-.18.5a.53.53 0 0 0-.17.65c-.07.11-.13.22-.17.34-.05.12-.08.24-.1.37a.53.53 0 0 0-.01.32c.02.16.05.32.09.47.04.16.09.31.15.46a.53.53 0 0 0-.01.62c-.13.11-.27.19-.41.25-.15.06-.3.09-.45.09a.53.53 0 0 0-.57.34c-.06.15-.12.3-.18.45-.06.15-.12.3-.16.45a.53.53 0 0 0-.04.4c.03.11.07.22.12.32.05.1.1.19.16.29a.53.53 0 0 0-.24.71c-.13.13-.26.24-.4.36-.14.11-.28.21-.43.3-.15.09-.3.17-.46.24a.53.53 0 0 0-.63-.07c-.15-.06-.3-.13-.45-.2-.14-.08-.28-.15-.41-.23a.53.53 0 0 0-.39-.1c-.14-.03-.28-.05-.42-.05-.14 0-.28.02-.42.05-.14.03-.28.06-.42.09a.53.53 0 0 0-.41.1c-.13.06-.27.13-.4.2-.13.08-.26.15-.4.22-.14.07-.28.14-.42.2a.53.53 0 0 0-.47-.19c-.11-.06-.22-.11-.33-.16-.11-.05-.22-.1-.33-.16a.53.53 0 0 0-.4-.14c-.11-.01-.22-.01-.33 0-.11 0-.22 0-.33.02a.53.53 0 0 0-.53.15c-.08.08-.16.16-.24.24-.08.08-.16.16-.24.24a.53.53 0 0 0-.59.29c-.06.11-.11.22-.16.34-.05.11-.09.23-.13.34a.53.53 0 0 0-.26.65c-.1.13-.2.25-.3.37-.1.12-.2.24-.3.35-.1.11-.2.22-.29.32a.53.53 0 0 0-.4.38c-.08.14-.15.28-.2.42-.06.14-.11.28-.15.42a.53.53 0 0 0-.22.64c-.09.11-.18.22-.27.32-.09.1-.18.2-.27.29a.53.53 0 0 0-.3.32c-.06.1-.11.21-.16.31-.05.1-.09.2-.12.3-.04.1-.06.2-.08.3a.53.53 0 0 0-.15.71c-.04.11-.07.22-.1.33-.03.11-.05.22-.06.33a.53.53 0 0 0-.25.68c-.06.11-.12.22-.17.33-.05.11-.09.22-.13.33a.53.53 0 0 0-.19.74c-.09.11-.18.21-.26.3-.08.09-.16.18-.24.26a.53.53 0 0 0-.4.4c-.08.14-.15.28-.22.42-.07.14-.13.28-.18.42a.53.53 0 0 0-.27.64c-.1.11-.21.22-.31.33-.1.11-.21.21-.31.32-.1.1-.2.2-.3.3a.53.53 0 0 0-.36.32c-.08.1-.15.2-.22.3-.07.1-.14.2-.2.3a.53.53 0 0 0-.19.34c-.04.09-.08.18-.11.27-.03.09-.05.18-.06.27a.53.53 0 0 0-.24.63c-.06.09-.12.18-.18.27-.06.09-.11.18-.16.26a.53.53 0 0 0-.29.6c-.08.09-.15.18-.2.27-.06.09-.11.17-.16.25a.53.53 0 0 0-.25.6c-.05.08-.09.17-.13.25-.04.08-.08.16-.11.24a.53.53 0 0 0-.27.56c-.06.09-.12.18-.18.26-.06.08-.11.16-.16.24a.53.53 0 0 0-.25.56c-.06.08-.12.16-.18.24-.06.08-.11.16-.16.24a.53.53 0 0 0-.32.55c-.06.07-.12.15-.17.22-.06.08-.1.15-.15.22a.53.53 0 0 0-.3.51c-.05.07-.1.14-.15.21-.05.07-.09.14-.13.2a.53.53 0 0 0-.1.49c-.02.05-.05.1-.07.15-.02.05-.04.1-.06.14a.53.53 0 0 0-.11.45c-.02.05-.04.1-.05.15-.01.05-.02.1-.03.14a.53.53 0 0 0-.06.39c-.01.04-.01.08-.02.12-.01.04-.01.08-.01.12-.01.04-.01.08-.01.12a.53.53 0 0 0-.01.35c.01.04.01.08.01.12.01.04.01.08.02.12a.53.53 0 0 0-.05.38c-.01.04-.03.08-.04.12-.01.04-.02.08-.02.12a.53.53 0 0 0-.09.35c-.01.04-.02.08-.03.12-.01.04-.02.08-.02.12a.53.53 0 0 0-.1.35c-.02.04-.03.08-.05.12-.02.04-.03.08-.04.12a.53.53 0 0 0-.07.28c-.01.03-.02.06-.03.09-.01.03-.02.06-.02.09a.53.53 0 0 0-.08.28c-.01.03-.02.06-.03.09-.01.03-.01.06-.02.09a.53.53 0 0 0-.08.29c-.01.03-.02.06-.02.09-.01.03-.01.06-.02.09a.53.53 0 0 0-.06.25c-.01.02-.01.05-.02.07-.01.02-.01.05-.01.07a.53.53 0 0 0-.05.22c-.01.02-.01.04-.02.06-.01.02-.01.04-.01.06a.53.53 0 0 0-.03.18c-.01.02-.01.04-.01.06-.01.02-.01.04-.01.06a.53.53 0 0 0-.02.13c0 .02 0 .04-.01.06 0 .02 0 .04 0 .06a.53.53 0 0 0-.01.08c0 .01-.01.02-.01.03-.01.01-.01.02-.01.03a.53.53 0 0 0-.02.05c-.01.01-.01.02-.01.03-.01.01-.01.02-.01.03z" />
                 </svg>
-              </a>
+              </a> */}
             </div>
           </div>
-          
+
           {/* Links Sections */}
           <div className="flex flex-wrap justify-between w-full md:w-3/4">
             <div className="mb-8 md:mb-0 w-1/2 sm:w-1/3 lg:w-1/4">
               <h4 className="text-lg font-bold mb-4 font-['Poppins']">BROWSE BY CATEGORY</h4>
               <ul className="space-y-2 text-sm text-gray-600 font-['sans-serif']">
-                <li><a href="#" className="hover:text-gray-900">OIL</a></li>
-                <li><a href="#" className="hover:text-gray-900">GHEE</a></li>
-                <li><a href="#" className="hover:text-gray-900">SPICES</a></li>
-                <li><a href="#" className="hover:text-gray-900">FLOUR</a></li>
+                <Link to='/products/oils'><li><a className="hover:text-gray-900">OIL</a></li></Link>
+                <Link to='/products/ghee'><li><a className="hover:text-gray-900">GHEE</a></li></Link>
+                <Link to='/products/spices'><li><a className="hover:text-gray-900">SPICES</a></li></Link>
+                <Link to='/products/flours'><li><a className="hover:text-gray-900">FLOUR</a></li></Link>
               </ul>
             </div>
-            <div className="mb-8 md:mb-0 w-1/2 sm:w-1/3 lg:w-1/4">  
-              <h4 className="text-lg font-bold mb-4 font-['Poppins']">BROWSE BY OUTLET</h4>
-              <ul className="space-y-2 text-sm text-gray-600 font-['sans-serif']">
-                <li><a href="#" className="hover:text-gray-900">Sec - 128</a></li>
-                <li><a href="#" className="hover:text-gray-900">Sec - 62</a></li>
-                <li><a href="#" className="hover:text-gray-900">Sec - 226</a></li>
-              </ul>
-            </div>
+
             <div className="w-1/2 sm:w-1/3 lg:w-1/4">
               <h4 className="text-lg font-bold mb-4 font-['Poppins']">INFORMATION</h4>
               <ul className="space-y-2 text-sm text-gray-600 font-['sans-serif']">
-                <li><a href="#" className="hover:text-gray-900">About Us</a></li>
-                <li><a href="#" className="hover:text-gray-900">Contact Us</a></li>
-                <li><a href="#" className="hover:text-gray-900">FAQ</a></li>
+                <Link to='/about'><li><a className="hover:text-gray-900">About Us</a></li></Link>
+                <Link to='/contact'><li><a className="hover:text-gray-900">Contact Us</a></li></Link>
+                <Link to='/about#faq'><li><a className="hover:text-gray-900">FAQ</a></li></Link>
               </ul>
             </div>
           </div>
         </div>
-        
+
         <hr className="my-8 border-gray-200" />
-        
+
         {/* Contact and Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
-          <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-4 mb-4 md:mb-0">
+          <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-6 mb-4 md:mb-0 text-gray-700">
+            {/* Email */}
             <div className="flex items-center space-x-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M2.02 5.02L12 12.7L21.98 5.02c-.1-.08-.2-.16-.3-.24C20.5 4.14 16.7 3 12 3S3.5 4.14 2.32 4.78C2.22 4.86 2.12 4.94 2.02 5.02zM2 6.55V18h20V6.55L12 14.24 2 6.55z" />
-              </svg>
-              <span>support@jaindesiandpure.com</span>
+              <FaEnvelope className="text-lg text-[#CD9B63]" />
+              <span>jaindesiandpure@gmail.com</span>
             </div>
+
+            {/* Instagram */}
             <div className="flex items-center space-x-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
-              </svg>
-              <span>39 Lonsdale Street, Melbourne, VIC 3000</span>
+              <a
+                href="https://instagram.com/jaindesiandpure" // 🔗 replace with your Instagram
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:text-pink-500"
+              >
+                <FaInstagram className="text-lg text-[#CD9B63]" />
+                <span>JAIN DESI AND PURE</span>
+              </a>
             </div>
+
+            {/* Phone */}
             <div className="flex items-center space-x-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M6.62 10.79l-1.63-1.63c-.39-.39-1.02-.39-1.41 0l-2.83 2.83c-.39.39-.39 1.02 0 1.41l1.63 1.63c-.39.39-1.02.39-1.41 0l-2.83-2.83c-.39-.39-.39-1.02 0-1.41l1.63-1.63c-.39-.39-1.02-.39-1.41 0l-1.63-1.63c-.39-.39-1.02-.39-1.41 0l-.83.83c-.39.39-.39 1.02 0 1.41l.83.83c.39.39 1.02.39 1.41 0l1.63-1.63c.39-.39 1.02-.39 1.41 0l1.63 1.63c.39.39 1.02.39 1.41 0l1.63-1.63c.39-.39 1.02-.39 1.41 0l1.63 1.63c.39.39 1.02.39 1.41 0l1.63-1.63c.39-.39 1.02-.39 1.41 0l.83.83c.39.39.39 1.02 0 1.41l-.83.83c-.39.39-1.02.39-1.41 0l-1.63-1.63c-.39-.39-1.02-.39-1.41 0l-1.63-1.63c-.39-.39-1.02-.39-1.41 0l-1.63-1.63z" />
-              </svg>
-              <span>+61 401 224 357</span>
+              <FaPhoneAlt className="text-lg text-[#CD9B63]" />
+              <span>+91-96677 95721</span>
             </div>
           </div>
+
           <div className="text-xs">
             Build Right Now © 2025. All Rights Reserved.
           </div>

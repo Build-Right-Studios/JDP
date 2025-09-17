@@ -2,19 +2,10 @@ import React from 'react';
 import bgImage from '../../images/bg.jpg';
 
 function OurStore() {
-  const youtubeVideoId = "AZ9oBudeHLU";
-  
-  // YouTube embed with autoplay and additional parameters
-  const embedUrl = `https://www.youtube.com/embed/${youtubeVideoId}?` +
-    `autoplay=1&` +          // Enable autoplay
-    `mute=1&` +             // Must be muted for autoplay to work
-    `loop=1&` +             // Loop the video
-    `playlist=${youtubeVideoId}&` + // Required for loop to work
-    `controls=1&` +         // Show controls
-    `showinfo=0&` +         // Hide video info
-    `rel=0&` +              // Don't show related videos
-    `modestbranding=1&` +   // Minimal YouTube branding
-    `start=0`;              // Start from beginning
+  const shortVideoId = "PqngLfyGp_8";
+
+  const embedUrl = `https://www.youtube.com/embed/${shortVideoId}?` +
+    `autoplay=0&mute=0&loop=1&playlist=${shortVideoId}&controls=1&rel=0&modestbranding=1&start=0`;
 
   return (
     <div className="relative mt-14 overflow-hidden">
@@ -30,18 +21,20 @@ function OurStore() {
           Our Store
         </h2>
 
-        <div className="max-w-md mx-auto px-4">
-          {/* Note for users */}
-          <p className="text-center text-sm text-gray-600 mb-4">
-            Video will autoplay muted. Click to unmute and enjoy full audio.
-          </p>
-          
-          {/* YouTube Embed with Autoplay */}
-          <div className="relative w-full h-0" style={{ paddingBottom: '56.25%' }}>
+        <div className="max-w-3xl mx-auto px-4 mb-4 lg:w-[30vw]">
+
+          {/* Responsive YouTube Embed */}
+          <div 
+            className="relative w-full" 
+            style={{ 
+              paddingTop: '177.78%', // vertical 9:16 aspect ratio
+              maxHeight: 'clamp(300px, 10vh, 600px)' // min 400px, max 900px, scales with viewport
+            }}
+          >
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
               src={embedUrl}
-              title="Our Store Video"
+              title="Our Store Shorts Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

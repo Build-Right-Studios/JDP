@@ -9,11 +9,13 @@ import Faq from '../components/AboutUs/Faq.jsx'
 function About() {
   return (
     <div>
-      <Hero name= "ABOUT US"></Hero>
+      <Hero name="ABOUT US"></Hero>
       <GreenBar></GreenBar>
       <OurMission  ></OurMission>
       <Gallery></Gallery>
-      <Faq></Faq>
+      <section id="faq">
+        <Faq />
+      </section>
     </div>
   )
 }
