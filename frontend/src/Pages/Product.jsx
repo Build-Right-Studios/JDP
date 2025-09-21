@@ -21,7 +21,7 @@ const ProductSection = ({ title, category, products }) => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-        {products.map((item) => (
+        {previewProducts.map((item) => (
           <ProductItem
             key={item._id}
             id={item._id}
@@ -38,7 +38,7 @@ export default function Product() {
   return (
     <div className="p-10 border-t">
       <ProductSection
-        title="Oils"
+        title="Cold Pressed Oils"
         category="oils"
         products={products.filter((p) => p.category === "oils")}
       />
@@ -56,6 +56,26 @@ export default function Product() {
         title="Ghee"
         category="ghee"
         products={products.filter((p) => p.category === "ghee")}
+      />
+      <ProductSection
+        title="Pulses"
+        category="pulses"
+        products={products.filter((p) => p.category === "pulses")}
+      />
+      <ProductSection
+        title="Rice"
+        category="rice"
+        products={products.filter((p) => p.category === "rice")}
+      />
+      <ProductSection
+        title="Pickels"
+        category="pickels"
+        products={products.filter((p) => p.category === "pickels")}
+      />
+      <ProductSection
+        title="Papads"
+        category="papads"
+        products={products.filter((p) => p.category === "papads")}
       />
     </div>
   );
